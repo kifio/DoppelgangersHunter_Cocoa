@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>window.selected.count</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@items@</string>
+        <key>items</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>lu</string>
+            <key>one</key>
+            <string>Выбрано: %lu элемент</string>
+            <key>few</key>
+            <string>Выбрано: %lu элемента</string>
+            <key>many</key>
+            <string>Выбрано: %lu элементов</string>
+            <key>other</key>
+            <string>Выбрано: %lu элементов</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

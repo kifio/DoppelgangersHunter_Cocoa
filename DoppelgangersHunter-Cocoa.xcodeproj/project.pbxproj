@@ -6,41 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D155C36F2EF9921400E62B44 /* DoppelgangersHunter in Frameworks */ = {isa = PBXBuildFile; productRef = D155C36E2EF9921400E62B44 /* DoppelgangersHunter */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		D1146C6C2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoppegannersHunter-Cocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D155C3382EF9917D00E62B44 /* DoppelgangersHunter-Cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DoppelgangersHunter-Cocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D1146C6E2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa */ = {
+		D155C33A2EF9917D00E62B44 /* DoppelgangersHunter-Cocoa */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DoppegannersHunter-Cocoa";
+			path = "DoppelgangersHunter-Cocoa";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D1146C692EF34A8500BE94B2 /* Frameworks */ = {
+		D155C3352EF9917D00E62B44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D155C36F2EF9921400E62B44 /* DoppelgangersHunter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D1146C632EF34A8500BE94B2 = {
+		D155C32F2EF9917C00E62B44 = {
 			isa = PBXGroup;
 			children = (
-				D1146C6E2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa */,
-				D1146C6D2EF34A8500BE94B2 /* Products */,
+				D155C33A2EF9917D00E62B44 /* DoppelgangersHunter-Cocoa */,
+				D155C3392EF9917D00E62B44 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D1146C6D2EF34A8500BE94B2 /* Products */ = {
+		D155C3392EF9917D00E62B44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1146C6C2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa.app */,
+				D155C3382EF9917D00E62B44 /* DoppelgangersHunter-Cocoa.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +53,68 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D1146C6B2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa */ = {
+		D155C3372EF9917D00E62B44 /* DoppelgangersHunter-Cocoa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1146C7A2EF34A8600BE94B2 /* Build configuration list for PBXNativeTarget "DoppegannersHunter-Cocoa" */;
+			buildConfigurationList = D155C3462EF9917D00E62B44 /* Build configuration list for PBXNativeTarget "DoppelgangersHunter-Cocoa" */;
 			buildPhases = (
-				D1146C682EF34A8500BE94B2 /* Sources */,
-				D1146C692EF34A8500BE94B2 /* Frameworks */,
-				D1146C6A2EF34A8500BE94B2 /* Resources */,
+				D155C3342EF9917D00E62B44 /* Sources */,
+				D155C3352EF9917D00E62B44 /* Frameworks */,
+				D155C3362EF9917D00E62B44 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D1146C6E2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa */,
+				D155C33A2EF9917D00E62B44 /* DoppelgangersHunter-Cocoa */,
 			);
-			name = "DoppegannersHunter-Cocoa";
+			name = "DoppelgangersHunter-Cocoa";
 			packageProductDependencies = (
+				D155C36E2EF9921400E62B44 /* DoppelgangersHunter */,
 			);
-			productName = "DoppegannersHunter-Cocoa";
-			productReference = D1146C6C2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa.app */;
+			productName = "DoppelgangersHunter-Cocoa";
+			productReference = D155C3382EF9917D00E62B44 /* DoppelgangersHunter-Cocoa.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D1146C642EF34A8500BE94B2 /* Project object */ = {
+		D155C3302EF9917C00E62B44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					D1146C6B2EF34A8500BE94B2 = {
+					D155C3372EF9917D00E62B44 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = D1146C672EF34A8500BE94B2 /* Build configuration list for PBXProject "DoppegannersHunter-Cocoa" */;
-			developmentRegion = en;
+			buildConfigurationList = D155C3332EF9917C00E62B44 /* Build configuration list for PBXProject "DoppelgangersHunter-Cocoa" */;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				ru,
 			);
-			mainGroup = D1146C632EF34A8500BE94B2;
+			mainGroup = D155C32F2EF9917C00E62B44;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D155C36D2EF9921400E62B44 /* XCLocalSwiftPackageReference "DoppelgangersHunter" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D1146C6D2EF34A8500BE94B2 /* Products */;
+			productRefGroup = D155C3392EF9917D00E62B44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1146C6B2EF34A8500BE94B2 /* DoppegannersHunter-Cocoa */,
+				D155C3372EF9917D00E62B44 /* DoppelgangersHunter-Cocoa */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D1146C6A2EF34A8500BE94B2 /* Resources */ = {
+		D155C3362EF9917D00E62B44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +124,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D1146C682EF34A8500BE94B2 /* Sources */ = {
+		D155C3342EF9917D00E62B44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +134,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D1146C782EF34A8600BE94B2 /* Debug */ = {
+		D155C3442EF9917D00E62B44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +198,7 @@
 			};
 			name = Debug;
 		};
-		D1146C792EF34A8600BE94B2 /* Release */ = {
+		D155C3452EF9917D00E62B44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +254,7 @@
 			};
 			name = Release;
 		};
-		D1146C7B2EF34A8600BE94B2 /* Debug */ = {
+		D155C3472EF9917D00E62B44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -254,9 +263,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU33AJBF5T;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -265,8 +273,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kifio.DoppegannersHunter-Cocoa";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kifio.DoppelgangersHunter-Cocoa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -278,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		D1146C7C2EF34A8600BE94B2 /* Release */ = {
+		D155C3482EF9917D00E62B44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,9 +296,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SU33AJBF5T;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -298,8 +306,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kifio.DoppegannersHunter-Cocoa";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.kifio.DoppelgangersHunter-Cocoa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -314,25 +323,39 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1146C672EF34A8500BE94B2 /* Build configuration list for PBXProject "DoppegannersHunter-Cocoa" */ = {
+		D155C3332EF9917C00E62B44 /* Build configuration list for PBXProject "DoppelgangersHunter-Cocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1146C782EF34A8600BE94B2 /* Debug */,
-				D1146C792EF34A8600BE94B2 /* Release */,
+				D155C3442EF9917D00E62B44 /* Debug */,
+				D155C3452EF9917D00E62B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1146C7A2EF34A8600BE94B2 /* Build configuration list for PBXNativeTarget "DoppegannersHunter-Cocoa" */ = {
+		D155C3462EF9917D00E62B44 /* Build configuration list for PBXNativeTarget "DoppelgangersHunter-Cocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1146C7B2EF34A8600BE94B2 /* Debug */,
-				D1146C7C2EF34A8600BE94B2 /* Release */,
+				D155C3472EF9917D00E62B44 /* Debug */,
+				D155C3482EF9917D00E62B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D155C36D2EF9921400E62B44 /* XCLocalSwiftPackageReference "DoppelgangersHunter" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DoppelgangersHunter;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D155C36E2EF9921400E62B44 /* DoppelgangersHunter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DoppelgangersHunter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = D1146C642EF34A8500BE94B2 /* Project object */;
+	rootObject = D155C3302EF9917C00E62B44 /* Project object */;
 }

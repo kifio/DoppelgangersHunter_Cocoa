@@ -1,0 +1,50 @@
+
+/* Class = "NSMenuItem"; title = "DoppelgangersHunter-Cocoa"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "DoppelgangersHunter-Cocoa";
+
+/* Class = "NSMenuItem"; title = "Quit DoppelgangersHunter-Cocoa"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit DoppelgangersHunter-Cocoa";
+
+/* Class = "NSMenuItem"; title = "About DoppelgangersHunter-Cocoa"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About DoppelgangersHunter-Cocoa";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "GD5-J7-OsD"; */
+"GD5-J7-OsD.title" = "Table View Cell";
+
+/* Class = "NSToolbarItem"; label = "Открыть каталог"; ObjectID = "PrS-lI-6S8"; */
+"PrS-lI-6S8.label" = "Открыть каталог";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Toolbar Item"; ObjectID = "PrS-lI-6S8"; */
+"PrS-lI-6S8.paletteLabel" = "Toolbar Item";
+
+/* Class = "NSToolbarItem"; label = "Удалить выбранные"; ObjectID = "S1g-Xb-Zsc"; */
+"S1g-Xb-Zsc.label" = "Удалить выбранные";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Toolbar Item"; ObjectID = "S1g-Xb-Zsc"; */
+"S1g-Xb-Zsc.paletteLabel" = "Toolbar Item";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "k4v-TJ-3JW"; */
+"k4v-TJ-3JW.title" = "Text Cell";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "nva-DJ-1Sc"; */
+"nva-DJ-1Sc.title" = "DoppelgangersHunter-Cocoa";
+
+"Не удалось прочитать файла" = "Не удалось прочитать содержимое файла";
+"Открыть во внешнем приложении" = "Открыть во внешнем приложении";
+"Формат файла не поддерживается" = "Формат файла не поддерживается";
+
+"content.unavailable" = "Не удалось прочитать содержимое файла";
+"content.open" = "Открыть во внешнем приложении";
+"content.unsupported" = "Формат файла не поддерживается";
+
+"menu.open" = "Открыть файл";
+"menu.delete" = "Переместить в корзину";
+
+"alert.moveToTrash.message" = "Переместить выбранные файлы в корзину?";
+"alert.moveToTrash.confirm" = "Переместить";
+"common.cancel" = "Отмена";
+"panel.chooseDirectory.title" = "Выберите папку";
+"panel.chooseDirectory.prompt" = "Выбрать";
