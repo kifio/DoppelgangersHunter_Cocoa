@@ -14,16 +14,10 @@ protocol DirectoryContentView {
     func deleteSelectedFiles()
 }
 
-struct Cell {
-    let doppelganger: Doppelganger
-    let isFirstInSection: Bool
-    let isLastInSection: Bool
-}
-
 final class TableViewController: NSViewController {
     
     private var directoryName: String!
-    private var cells = [Cell]()
+    private var cells = [Doppelganger]()
     private var previewsCache = NSCache<NSURL, NSImage>()
     private let noSignImage = NSImage(
             systemSymbolName: "nosign",
@@ -107,7 +101,9 @@ final class TableViewController: NSViewController {
     }
     
     private func deleteFilesAt(selectedRowIndexes: IndexSet) {
+        var cellsForRemove = Set<Doppelganger>()
         selectedRowIndexes.forEach {
+            cellsForRemove.insert(cells[$0])
             do {
                 try FileManager.default.trashItem(
                     at: URL(fileURLWithPath: path(for: $0)),
@@ -116,9 +112,9 @@ final class TableViewController: NSViewController {
             } catch {
                 print(error)
             }
-            cells.remove(at: $0)
         }
-        tableView.removeRows(at: selectedRowIndexes, withAnimation: .slideUp)
+        
+        cells.removeAll(where: { cellsForRemove.contains($0) })
         clearSelectedFile()
     }
     
@@ -128,10 +124,11 @@ final class TableViewController: NSViewController {
         interactor.show(doppelganger: nil)
         interactor.updateSelected(dirName: directoryName, selectedFilesCount: 0)
         tableView.deselectAll(nil)
+        tableView.reloadData()
     }
     
     private func path(for row: Int) -> String {
-        cells[row].doppelganger.path
+        cells[row].path
     }
 }
 
@@ -164,7 +161,7 @@ extension TableViewController: NSTableViewDelegate {
         cell.textField?.toolTip = url.absoluteString
         cell.imageView?.tag = url.hash
         cell.imageView?.image = nil
-        switch cells[row].doppelganger.contentType {
+        switch cells[row].contentType {
         case .image:
             updateCache(
                 for: url,
@@ -208,7 +205,7 @@ extension TableViewController: NSTableViewDelegate {
         let selectedFilesCount = UInt(tableView.selectedRowIndexes.count)
         if tableView.selectedRow >= 0  {
             if selectedFilesCount <= 1 {
-                interactor.show(doppelganger: cells[tableView.selectedRow].doppelganger)
+                interactor.show(doppelganger: cells[tableView.selectedRow])
             }
             interactor.updateSelected(
                 dirName: path(for: tableView.selectedRow),
@@ -227,21 +224,14 @@ extension TableViewController: DirectoryContentView {
         directoryName = url.path()
         progressIndicator.startAnimation(self)
         cells.removeAll()
-        tableView.reloadData()
         clearSelectedFile()
         Task {
             let doppelgangers = await Hunt().hunt(url: url)
             await MainActor.run {
                 doppelgangers.forEach {
                     let files = $0.files
-                    files.enumerated().forEach { index, file in
-                        self.cells.append(
-                            Cell(
-                                doppelganger: file,
-                                isFirstInSection: index == 0,
-                                isLastInSection: index == files.count - 1
-                            )
-                        )
+                    files.forEach { file in
+                        cells.append(file)
                     }
                 }
                 tableView.reloadData()
